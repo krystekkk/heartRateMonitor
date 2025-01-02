@@ -8,6 +8,8 @@ This basic heart rate monitor detects pulse from a video sample that simulates a
 
 ### Dependencies
 
+Code requires OpenCV and Numpy.
+
 ```bash
 pip install opencv-python
 ```
