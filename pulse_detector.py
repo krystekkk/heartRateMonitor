@@ -18,6 +18,8 @@ class PulseDetector:
         bpm = signal_analyzer.calculate_bpm(fft_signal, len(filtered_signal))
 
         if bpm:
+            with open(self.output_file, 'w') as file:
+                file.write(f'Pulse: {bpm} BPMs\\n')
             print(f'Pulse: {bpm} BPMs')
         else:
             print("Unable to detect pulse.")
